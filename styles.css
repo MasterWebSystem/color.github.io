@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background-color: #666;
+  box-shadow: 0 0 2px #444;
+  transition: 2s;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+.add-color {
+ position: absolute;
+ right: 55px;
+
+ width: 170px;
+}
+
+.add-color input {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: .5rem;
+  outline: none;
+  border: 1px solid #444;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.add-color button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #999;
+  color: #fff;
+  border: none;
+  transition: .5s;
+}
+
+.add-color button:hover {
+  background-color: #888
+}
+
+.add-color input:required {
+  border: 1px solid red;
+}
+
+.add-color input:valid {
+  border: 1px solid #999;
+}
